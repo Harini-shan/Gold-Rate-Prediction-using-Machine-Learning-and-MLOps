@@ -1,28 +1,46 @@
 # 💰 Gold Rate Prediction using Machine Learning and MLOps
 
-This project predicts the gold rate based on the USD to INR exchange rate using a Machine Learning pipeline. It includes data cleaning, model training, serialization using `pickle`, deployment using Gradio UI, and automatic data logging to Google Sheets.
+An end-to-end machine learning project to predict gold prices based on USD to INR exchange rate. This project includes data cleaning, model training, serialization, deployment using Gradio, and automated logging to Google Sheets — demonstrating a complete MLOps pipeline.
 
 ---
 
 ## 🚀 Features
 
-- Predict gold price using a trained **Linear Regression** model
-- Automated **data cleaning** and preprocessing
-- **Hyperparameter tuning** to improve model accuracy
-- **Model and scaler saved using `pickle`** for fast deployment
-- Interactive **Gradio-based UI** to input USD-INR and get gold rate
-- All predictions are **automatically saved to CSV**
-- Appends new flagged data to **Google Sheets** via GSpread API
-- Organized in a modular way for easy understanding and scaling
+- 📊 **Data Analysis & Cleaning**  
+  Handled missing values, cleaned and prepared the dataset for training.
+
+- 🧠 **Model Building with Linear Regression**  
+  Trained a regression model to predict gold rates based on the USD-INR value.
+
+- ⚙️ **Hyperparameter Optimization**  
+  Tuned model parameters to enhance prediction accuracy.
+
+- 💾 **Model Serialization with Pickle**  
+  Saved both the model and scaler for later inference.
+
+- 🖥️ **Gradio Web Interface**  
+  Built an interactive web UI to input USD-INR and get predicted gold rate.
+
+- 📉 **Flagging & Logging**  
+  Each prediction is optionally "flagged" and saved along with a timestamp.
+
+- 📤 **Google Sheets Integration**  
+  Automatically appends new flagged data into a Google Sheet for easy access and real-time updates.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- **Languages**: Python
-- **Libraries**: Pandas, NumPy, Scikit-learn, Gradio, GSpread, OAuth2Client
-- **Deployment & Logging**: Gradio, Google Sheets API
-- **Tools**: VS Code, Google Cloud Console
+| Tool/Library     | Purpose                          |
+|------------------|----------------------------------|
+| Python           | Programming language             |
+| Pandas, NumPy    | Data manipulation                |
+| scikit-learn     | Machine learning & preprocessing |
+| Pickle           | Model serialization              |
+| Gradio           | Web interface for prediction     |
+| gspread & Google API | Append data to Google Sheets |
+| Jupyter Notebook | Exploratory analysis             |
+| VS Code          | Development environment          |
 
 ---
 
